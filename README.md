@@ -10,8 +10,11 @@ This is a basic machine learning model designed to predict the most suitable cro
   - pH level of the soil
 ## Images
 
-"C:\Users\Quarks\OneDrive\Pictures\Screenshots\Screenshot (40).png"
-"C:\Users\Quarks\OneDrive\Pictures\Screenshots\Screenshot (41).png"
+![Screenshot (40)](https://github.com/JILSPATEL/smart-farming/assets/100358865/11f54c10-87b9-4f6a-a380-3d100c32d2ef)
+
+![Screenshot (41)](https://github.com/JILSPATEL/smart-farming/assets/100358865/f0f1ffcc-c2de-420d-bd4b-23affaa2b405)
+
+
 
 
 ## Usage
