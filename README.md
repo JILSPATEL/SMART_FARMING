@@ -8,6 +8,11 @@ This is a basic machine learning model designed to predict the most suitable cro
   - Amount of nitrogen, phosphorus, and potassium in the soil
   - Season (winter, summer, monsoon)
   - pH level of the soil
+## Images
+
+"C:\Users\Quarks\OneDrive\Pictures\Screenshots\Screenshot (40).png"
+"C:\Users\Quarks\OneDrive\Pictures\Screenshots\Screenshot (41).png"
+
 
 ## Usage
 
