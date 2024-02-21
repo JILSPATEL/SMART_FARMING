@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crop Predictor</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            background-image: url('static/background.jpeg');
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(5px);
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            height: 350px;
+            width: 350px;
+            margin-bottom: 20px;
+            border: 5px solid black;
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 25px;
+            font-weight: bold;
+            border: 3px solid black;
+        }
+
+        form {
+            position: relative;
+            border: 5px solid black;
+            color: white;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn {
+            height: 28px;
+            width: 100px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+{% if result == 'apple' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/apple.jpeg" alt="Apple">
+</div>
+{% elif result == 'banana' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/banana.jpeg" alt="Banana">
+</div>
+{% elif result == 'blackgram' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/blackgram.jpeg" alt="Blackgram">
+</div>
+{% elif result == 'chickpea' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/chickpea.jpeg" alt="Chickpea">
+</div>
+{% elif result == 'coconut' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/coconut.jpeg" alt="Coconut">
+</div>
+{% elif result == 'coffee' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/coffee.jpeg" alt="Coffee">
+</div>
+{% elif result == 'grapes' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/grapes.jpeg" alt="Grapes">
+</div>
+{% elif result == 'jute' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/jute.jpg" alt="Jute">
+</div>
+{% elif result == 'kidneybeans' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/kidneybeans.jpeg" alt="Kidney Beans">
+</div>
+{% elif result == 'lentil' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/lentil.jpeg" alt="Lentil">
+</div>
+{% elif result == 'maize' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/maize.jpeg" alt="Maize">
+</div>
+{% elif result == 'mango' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/mango.jpeg" alt="Mango">
+</div>
+{% elif result == 'mothbean' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/mothbean.jpeg" alt="Mothbean">
+</div>
+{% elif result == 'mungbean' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/mungbean.jpeg" alt="Mungbean">
+</div>
+{% elif result == 'muskmelon' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/muskmelon.jpeg" alt="Muskmelon">
+</div>
+{% elif result == 'orange' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/orange.jpeg" alt="Orange">
+</div>
+{% elif result == 'papaya' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/papaya.jpeg" alt="Papaya">
+</div>
+{% elif result == 'pigeonpeas' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/pigeonpeas.jpg" alt="Pigeonpeas">
+</div>
+{% elif result == 'pomegranate' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/pomegranate.jpeg" alt="Pomegranate">
+</div>
+{% elif result == 'rice' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/rice.jpg" alt="Rice">
+</div>
+{% elif result == 'watermelon' %}
+<div class="container">
+    <p>{{ result|replace('[','')|replace(']','') }}</p>
+    <br>
+    <img src="static/watermelon.jpeg" alt="Watermelon">
+</div>
+{% endif %}
+<div class="container">
+    <form method="post" action="/predict">
+        <div id="Nitrogen">
+            Nitrogen: <input type="number" name="nitrogen" placeholder="Amount Of Nitrogen">
+        </div>
+
+        <div id="Phosphorous">
+            Phosphorous: <input type="number" name="phosphorous" placeholder="Amount Of Phosphorous">
+        </div>
+
+        <div id="Potassium">
+            Potassium: <input type="number" name="potassium" placeholder="Amount Of Potassium">
+        </div>
+
+        <div id="Temperature">
+            Temperature: <input type="number" name="temperature" placeholder="Temperature">
+        </div>
+
+        <div id="Humidity">
+            Humidity: <input type="number" name="humidity" placeholder="Humidity">
+        </div>
+
+        <div id="PH">
+            PH: <input type="number" name="ph" placeholder="Amount Of PH">
+        </div>
+
+        <div id="Rainfall">
+            Rainfall: <input type="number" name="rainfall" placeholder="Amount Of Rainfall">
+        </div>
+
+        <div>
+            <input type="submit" value="Predict" class="btn" id="Sub">
+        </div>
+    </form>
+</div>
+</body>
+</html>
