@@ -1,3 +1,4 @@
 Flask
 pickle
-numpy as np
+numpy
+Gunicorn
